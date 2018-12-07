@@ -1,9 +1,7 @@
 <img src="https://i.imgur.com/Oy6whpE.png" width="150" align="right">
 
 
-#PingLog
-
-
+# PingLog
 
 PingLog.bat allows for continuous/timeless pinging with the replies directed to console window and log file. No statistics are displayed or logged, only the ping replies. 
 
