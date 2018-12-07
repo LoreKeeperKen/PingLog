@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 set ip=%1
 if "%ip%"=="" (
-    set /p ip="Enter IP/URL to timeless ping:"
+    set /p ip="Enter IP/URL to timeless ping: "
 )
 if "%ip%"=="" (
     set ip=8.8.8.8
