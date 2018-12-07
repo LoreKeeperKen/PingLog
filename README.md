@@ -11,7 +11,7 @@ The log file is date and timestamped. And each ping reply is timestamped.
 
 ## Examples
 
-<img src="https://i.imgur.com/33g5115.png" align="left" border="5">
+<img src="https://i.imgur.com/33g5115.png" align="left">
 
 <img src="https://i.imgur.com/Cj7VpUQ.png" align="left">
 
