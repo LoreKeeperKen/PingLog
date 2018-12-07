@@ -1,4 +1,4 @@
-<img src="https://imgur.com/69VPATN" width="150" align="right">
+<img src="https://i.imgur.com/Oy6whpE.png" width="150" align="right">
 
 
 # Continuous-Ping-Log
