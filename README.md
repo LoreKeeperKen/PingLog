@@ -1,5 +1,5 @@
 
-
+<img src="https://i.imgur.com/Oy6whpE.png" width="150" align="right">
 
 # PingLog
 
@@ -15,11 +15,11 @@ PingLog is useful for troubleshooting intermintent network/internet troubles rel
  * latency
  * connection loss
 
-#### Console Window
+### Console Window
 
 <img src="https://i.imgur.com/33g5115.png">
 
-#### Logfile 
+### Logfile 
 
 <img src="https://i.imgur.com/Cj7VpUQ.png">
 
