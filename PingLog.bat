@@ -7,7 +7,7 @@ if "%ip%"=="" (
 )
 if "%ip%"=="" (
     set ip=8.8.8.8
-    echo No IP/URL entered, using default.
+    echo No IP/URL entered, using default !ip!
 )
 
 set hour=%time: =0%
