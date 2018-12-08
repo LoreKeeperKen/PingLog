@@ -22,8 +22,6 @@ PingLog is useful for troubleshooting intermintent network/internet troubles rel
 
 <img src="https://i.imgur.com/33g5115.png">
 
-&nbsp;
-
 ### Logfile 
 
 <img src="https://i.imgur.com/Cj7VpUQ.png">
