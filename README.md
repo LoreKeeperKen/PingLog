@@ -12,7 +12,7 @@ The log file is date and timestamped. And each ping reply is timestamped.
 
 ### Usage
 
-PingLog was built for troubleshooting intermintent network/internet troubles related to:
+PingLog was built for troubleshooting intermintent network/internet problems related to:
  * latency
  * connection loss
 
