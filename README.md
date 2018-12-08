@@ -17,8 +17,6 @@ The log file is date and timestamped. And each ping reply is timestamped.
 PingLog is useful for troubleshooting intermintent network/internet troubles related to:
  * latency
  * connection loss
- 
- &nbsp;
 
 ### Console Window
 
