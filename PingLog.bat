@@ -17,7 +17,7 @@ set filename=ping-%ip%-%DATE:~-4,4%%DATE:~-10,2%%DATE:~-7,2%-%hour:~0,2%%hour:~3
 :REPEAT
 
 set response=0
-for /f "delims=" %%a in ('ping -n 1 %ip% ^| find "Reply"') do (set response=%response%%%a)
+for /f "delims=" %%P in ('ping -n 1 %ip% ^| find "Reply"') do (set response=!response!%%P)
 set response=%response:time<=time=%
 if "%response:~0,2%"=="0R" (
     echo %response:~1% - %time:~0,-3%>> "%filename%" 
@@ -26,8 +26,8 @@ if "%response:~0,2%"=="0R" (
 )
 
 
-for /f "tokens=*" %%c in (%filename%) do ( 
-    set line=%%c 
+for /f "tokens=*" %%L in (%filename%) do ( 
+    set line=%%L 
 )
 echo %line%
 
@@ -36,11 +36,3 @@ ping 224.0.0.0 -n 1 -w 1400 >NUL
 
 
 goto REPEAT
-
-
-
-
-
-
-
-
