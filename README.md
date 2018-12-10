@@ -22,7 +22,6 @@ The IP/URL can be passed as an argument when ping log is call in the command pro
 
 When executed byng double clicking pinglog will prompt the user for an IP/URL, if no IP/URL is entered pinglog will use the default IP. 
 
-### Console Window
 
 <img src="https://i.imgur.com/33g5115.png">
 
@@ -34,8 +33,6 @@ The log file is date and timestamped. And each ping reply is timestamped.
 No statistics are displayed or logged, only the ping replies.
 
 
-
-### Logfile 
 
 <img src="https://i.imgur.com/Cj7VpUQ.png">
 
