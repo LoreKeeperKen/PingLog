@@ -27,7 +27,7 @@ set pingRequests[0409]=Ping request
 set requests[0409]=Request
 
 
-rem ===== German replies =======================================================================
+rem ===== German/Deutsch replies =======================================================================
 set replies[0407]=Antwort
 set pingRequests[0407]=Ping-Anforderung
 set requests[0407]=Zeitüberschreitung
