@@ -20,7 +20,7 @@ The IP/URL can be passed as an argument when PingLog is called in the command pr
 
 ### Execute by Double Click Batch File
 
-When executed, PingLog will prompt the user for an IP/URL. If no IP/URL is entered PingLog will use the default IP. 
+PingLog will prompt the user for an IP/URL when executed by double clicking batch file. If no IP/URL is entered PingLog will use the default IP. 
 
 
 <img src="https://i.imgur.com/33g5115.png">
