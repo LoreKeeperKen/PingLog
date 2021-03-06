@@ -15,12 +15,12 @@ PingLog was built for troubleshooting intermintent network/internet problems rel
 
 ### Execute From Command Prompt
 
-The IP/URL can be passed as an argument when ping log is call in the command prompt. Any standard ping options will be ignored by pinglog. 
+The IP/URL can be passed as an argument when PingLog is called in the command prompt. Any standard ping options will be ignored by PingLog. 
 
 
 ### Execute by Double Click Batch File
 
-When executed, pinglog will prompt the user for an IP/URL. If no IP/URL is entered pinglog will use the default IP. 
+When executed, PingLog will prompt the user for an IP/URL. If no IP/URL is entered PingLog will use the default IP. 
 
 
 <img src="https://i.imgur.com/33g5115.png">
