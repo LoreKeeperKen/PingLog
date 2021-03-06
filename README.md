@@ -3,13 +3,17 @@
 
 # PingLog
 
-PingLog allows for continuous/timeless pinging with the replies directed to console window and log file. 
+PingLog allows for continuous/timeless pinging with the replies directed to console window and log file.
 
 ### Usage
 
 PingLog was built for troubleshooting intermintent network/internet problems related to:
  * latency
  * connection loss
+
+### Language
+
+ PingLog supports English and (Probably) German. If you would like to add another language submit a pull request or an issue. 
  
 ## Behaviour 
 
