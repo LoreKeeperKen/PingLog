@@ -210,7 +210,7 @@ for /l %%L in (1,1,%LineCount%) do (
         set response=!pingarray[%%L]!
     ) else if "!pingarray[%%L]:~0,12!"=="!pingRequests[%defaultLang%]!" (
         set response=!pingarray[%%L]!
-        echo !response! - %date%%time:~0,-3%
+        echo !response! - %date% - %time:~0,-3%
         if "!executefrom!"=="cmd" (
             goto :eof
         ) else (
@@ -226,7 +226,7 @@ for /l %%L in (1,1,%LineCount%) do (
 
 
 rem =========== Writes the ping reply to logfile ================================================
-echo %response% - %date%%time:~0,-3%>> "%filename%"
+echo %response% - %date% - %time:~0,-3%>> "%filename%"
 
 
 rem =========== Reads the last line from the logfile =============================================
