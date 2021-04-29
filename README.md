@@ -32,7 +32,7 @@ PingLog will prompt the user for an IP/URL when executed by double clicking batc
 
 ### Logging
 
-The log file is date and timestamped. And each ping reply is timestamped. 
+The log file and each ping is date and timestamped. 
 
 No statistics are displayed or logged, only the ping replies.
 
