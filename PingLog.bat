@@ -25,13 +25,14 @@ rem ===== English replies ======================================================
 set replies[0409]=Reply
 set pingRequests[0409]=Ping request
 set requests[0409]=Request
+set failure[0409]=PING:
 
 
 rem ===== German/Deutsch replies =======================================================================
 set replies[0407]=Antwort
 set pingRequests[0407]=Ping-Anforderung
 set requests[0407]=Zeitüberschreitung
-
+set failure[0407]=PING:
 
 rem When adding support for new languages use the number returned by the below reg query for the index 
 
@@ -78,7 +79,7 @@ goto FILE
 
 rem ============================================================================================
 rem ============================================================================================
-rem = If executed from cmd, interates over passed arguments, removes -* arguments, and sets IP.
+rem = If executed from cmd, iterates over passed arguments, removes -* arguments, and sets IP.
 rem ============================================================================================
 rem ============================================================================================
 
@@ -203,19 +204,13 @@ rem =========== Interates over the ping reply ==================================
 for /l %%L in (1,1,%LineCount%) do (
     if "!pingarray[%%L]:~0,5!"=="!replies[%defaultLang%]!" (
         set response=!pingarray[%%L]!
-    ) else if "!pingarray[%%L]:~0,4!"=="PING" (
+    ) else if "!pingarray[%%L]:~0,7!"=="!requests[%defaultLang%]!" (
+        set response=!pingarray[%%L]! 
+    ) else if "!pingarray[%%L]:~0,5!"=="!failure[%defaultLang%]!" (
         set response=!pingarray[%%L]!
-        echo !response! - %time:~0,-3%
-        if "!executefrom!"=="cmd" (
-            goto :eof
-        ) else (
-            set ip=
-            echo Please try again
-            goto FILE
-        )
     ) else if "!pingarray[%%L]:~0,12!"=="!pingRequests[%defaultLang%]!" (
         set response=!pingarray[%%L]!
-        echo !response! - %time:~0,-3%
+        echo !response! - %date%%time:~0,-3%
         if "!executefrom!"=="cmd" (
             goto :eof
         ) else (
@@ -223,8 +218,7 @@ for /l %%L in (1,1,%LineCount%) do (
             echo Please try again
             goto FILE
         )
-    ) else if "!pingarray[%%L]:~0,7!"=="!Requests[%defaultLang%]!" (
-        set response=!pingarray[%%L]! 
+
     ) else (
         echo Unused lines. > NUL
     )
@@ -232,7 +226,7 @@ for /l %%L in (1,1,%LineCount%) do (
 
 
 rem =========== Writes the ping reply to logfile ================================================
-echo %response% - %time:~0,-3%>> "%filename%"
+echo %response% - %date%%time:~0,-3%>> "%filename%"
 
 
 rem =========== Reads the last line from the logfile =============================================
